@@ -3,8 +3,8 @@ import sys, pygame
 
 class Movimiento():
 
-      def __init__(self,figura):
-          self.figura              = figura
+      def __init__(self,tipo_figura):
+          self.figura          = figura
           self.contador_de_movimiento=0
 	  self.lim_inf_x       = 0
 	  self.lim_inf_y       = -5

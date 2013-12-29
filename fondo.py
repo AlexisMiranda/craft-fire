@@ -1,7 +1,7 @@
 # coding: latin-1
 from rectangulo import Rectangulo
 from movimiento import Movimiento
-from bala import Bala
+from disparo import Disparo
 from nave_enemiga import NaveEnemiga
 from nave_jugador import NaveJugador
 import pygame,sys
@@ -17,8 +17,8 @@ class Fondo():
 	  self.fondo2_posy                = f2_y
 	  self.largo                      = largo
 	  self.ancho                      = ancho
-	  self.fondo1                     = Movimiento(Rectangulo(url_imagen1,self.fondo1_posx,self.fondo1_posy,largo,ancho))
-	  self.fondo2                     = Movimiento(Rectangulo(url_imagen2,self.fondo2_posx,self.fondo2_posy,largo,ancho))
+	  self.fondo1                     = Movimiento(Rectangulo(url_imagen1,largo,ancho,self.fondo1_posx,self.fondo1_posy))
+	  self.fondo2                     = Movimiento(Rectangulo(url_imagen2,largo,ancho,self.fondo2_posx,self.fondo2_posy))
 	  self.screen                     = screen
 
       def update(self): 

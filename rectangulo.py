@@ -2,7 +2,7 @@ import sys, pygame
 
 class Rectangulo(pygame.sprite.Sprite):
 
-      def __init__(self,url_imagen,x,y,tamx,tamy):
+      def __init__(self,url_imagen,tamx,tamy,x=0,y=0):
           self.imagen        = pygame.transform.scale(pygame.image.load(url_imagen),[tamx,tamy])
 	  self.rectangulo    = self.imagen.get_rect()
 	  self.rectangulo.x  = x

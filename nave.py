@@ -1,7 +1,7 @@
 # coding: latin-1
 import sys, pygame
 from movimiento import Movimiento
-from bala import Bala
+from disparo import Disparo
 
 from rectangulo import Rectangulo
 class Nave(Movimiento):
@@ -43,7 +43,7 @@ class Nave(Movimiento):
 
       def disparar_bala(self):
 
-	  self.balas.insert(0,Bala([Rectangulo("b.png",100,100,5,5) for i in range(1)],1))
+	  self.balas.insert(0,Disparo([Rectangulo("b.png",100,100,5,5) for i in range(1)],1))
           self.balas[0].dispara =  True
 	  """self.cnt_balas                     += 1
 	  if self.cnt_balas >= len(self.balas): self.cnt_balas = 0
